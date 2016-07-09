@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jeongsubin.myapplication.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="#22b5ff"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:text="HARU"
+        android:background="#ff8c00"/>
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        class="com.google.android.gms.maps.MapFragment"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <EditText
+            android:id="@+id/text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="text id 1"/>
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="edit"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <EditText
+            android:id="@+id/text_id2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="text id 2"/>
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="edit"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <EditText
+            android:id="@+id/text_id3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="text id 3"/>
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="edit"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
