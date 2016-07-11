@@ -39,7 +39,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="등록받은키" />
+            android:value="AIzaSyDrW14FvCBMbaRbJiWszQREadbFC8_Y-x8" />
 
     </application>
 

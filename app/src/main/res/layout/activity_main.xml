@@ -5,22 +5,61 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.jeongsubin.myapplication.MainActivity">
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
+        android:orientation="horizontal"
+        android:background="#ff8c00">
+        <ImageButton
+            android:id="@+id/left_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:onClick="onClick"
+            android:padding="2dp"
+            android:src="@drawable/left"
+            android:background="#ff8c00"/>
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="1dp"
+            android:textAlignment="center"
+            android:textColor="#22b5ff"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:text="HARU"
+            android:background="#ff8c00"/>
+        <ImageButton
+            android:id="@+id/right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:onClick="onClick"
+            android:padding="5dp"
+            android:src="@drawable/right"
+            android:background="#ff8c00"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/date_id"
         android:textAlignment="center"
-        android:textColor="#22b5ff"
-        android:textSize="45dp"
-        android:textStyle="bold"
-        android:text="HARU"
-        android:background="#ff8c00"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        />
     <fragment
         android:id="@+id/map"
         android:layout_width="match_parent"
         android:layout_height="300dp"
+        android:onClick="onClick"
         class="com.google.android.gms.maps.MapFragment"/>
+    <Button
+        android:id="@+id/make_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Pin"
+        android:onClick="onClick"
+        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
